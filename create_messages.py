@@ -40,8 +40,8 @@ def load_constants(filename):
   """Read in constants file, which must be output in every language."""
   constant_defs = read_json_file(filename);
   constants_text = '\n'
-  for key in constant_defs:
-    value = constant_defs[key]
+  for key,val in constant_defs.items():
+    value = val
     value = value.replace('"', '\\"')
     constants_text += u'\n/** @export */ Blockly.Msg.{0} = \"{1}\";'.format(
         key, value)

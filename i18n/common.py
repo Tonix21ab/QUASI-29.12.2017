@@ -201,7 +201,7 @@ def write_files(author, lang, output_dir, units, write_key_file):
     Args:
         author: Name and email address of contact for translators.
         lang: ISO 639-1 source language code.
-        output_dir: Relative directory for output files. 
+        output_dir: Relative directory for output files.
         units: A list of dictionaries with entries for 'meaning', 'source',
             'description', and 'keys' (the last
             only if write_key_file is true),

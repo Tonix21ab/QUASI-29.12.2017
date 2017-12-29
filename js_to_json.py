@@ -122,7 +122,7 @@ def main():
         len(synonyms), synonym_file_name))
 
   # Create constants.json
-  constants_file_name = os.path.join( 
+  constants_file_name = os.path.join(
     + os.curdir, args.output_dir, 'constants.json')
   with open(constants_file_name, 'w') as outfile:
     json.dump(constants, outfile)

@@ -56,6 +56,7 @@ _INPUT_SYN_PATTERN = re.compile(
 _CONSTANT_DESCRIPTION_PATTERN = re.compile(
     """{{Notranslate}}""", re.IGNORECASE)
 
+
 def main():
   # Set up argument parser.
   parser = argparse.ArgumentParser(description='Create translation files.')

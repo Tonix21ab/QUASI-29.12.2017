@@ -46,6 +46,7 @@ def _parse_trans_unit(trans_unit):
         InputError: A required field was not present.
     """
 
+
     def get_value(tag_name):
         elts = trans_unit.getElementsByTagName(tag_name)
         if not elts:
@@ -164,6 +165,8 @@ def sort_units(units, templates):
         InputError: If a meaning definition cannot be found in the
             templates.
     """
+
+
     def key_function(unit):
         match = re.search(
             '\\smeaning\\s*=\\s*"{0}"\\s'.format(unit['meaning']),

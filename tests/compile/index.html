@@ -1,0 +1,45 @@
+<!--This page shows the query results -->
+<!--
+      Author: Jose Pedro Pedales
+      Version: 1.1
+      Description: In case of having a 'home page' set in the web.xml, it must redirect to the entry point '.do'
+     -->
+<!DOCTYPE html> /
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Blockly: Advanced Compilation Test</title>
+  
+  <style>
+    body {
+      background-color: #fff;
+      font-family: sans-serif;
+    }
+    h1 {
+      font-weight: normal;
+      font-size: 140%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Blockly: Advanced Compilation Test</h1>
+  <p>To run this test manually, download
+  <a href="https://dl.google.com/closure-compiler/compiler-latest.zip" TITLE="Company contact information.">closure-compiler-vxxxxxxxx.jar</a>,
+  place it in this directory, then run compile.js from the command line.</p>
+
+  <p>Measure the size of main_compressed.js (295kb as of October 2017), then reload
+  this page and see if Blockly works.</p>
+
+  <h1>Ok</h1>
+  <h1>Ok</h1>
+    <block type="controls_if"></block>
+    <block type="logic_compare"></block>
+    <block type="controls_repeat_ext"></block>
+    <block type="math_number"></block>
+    <block type="math_arithmetic"></block>
+    <block type="text"></block>
+    <block type="text_print"></block>
+  </xml>
+  <script src="main_compressed.js"></script>
+</body>
+</html>
